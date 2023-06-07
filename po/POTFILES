@@ -1,0 +1,6 @@
+data/io.github.aerocyber.task.desktop.in
+data/io.github.aerocyber.task.appdata.xml.in
+data/io.github.aerocyber.task.gschema.xml
+src/main.py
+src/window.py
+src/window.ui
