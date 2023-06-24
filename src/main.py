@@ -60,6 +60,7 @@ class TaskApplication(Adw.Application):
                                 developers=['Aero'],
                                 copyright='© 2023 Aero',
                                 comments="Manage tasks efficiently.",)
+        about.add_link("Donate", "https://buymeacoffee.com/aerocyber")
         about.present()
 
     def on_preferences_action(self, widget, _):
