@@ -19,12 +19,38 @@
           </object>
         </child>
         <child>
-          <object class="GtkLabel" id="label">
-            <property name="label">Hello, World!</property>
-            <property name="vexpand">true</property>
-            <style>
-              <class name="title-1"/>
-            </style>
+          <object class="GtkBox">
+            <property name="margin-top">10</property>
+            <property name="margin-bottom">10</property>
+            <property name="margin-start">10</property>
+            <property name="margin-end">10</property>
+            <child>
+              <object class="GtkButton" id="add_task_btn">
+                <property name="margin-start">5</property>
+                <property name="margin-end">5</property>
+                <property name="icon-name">list-add-symbolic</property>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="GtkScrolledWindow" id="label">
+            <property name="max-content-height">500</property>
+            <property name="min-content-height">400</property>
+            <property name="max-content-width">200</property>
+            <property name="min-content-width">100</property>
+            <property name="margin-start">10</property>
+            <property name="margin-end">10</property>
+            <property name="margin-top">10</property>
+            <property name="margin-bottom">10</property>
+            <property name="hscrollbar-policy">automatic</property>
+            <property name="vscrollbar-policy">automatic</property>
+            <child>
+              <object class="GtkListBox">
+                <property name="show-separators">true</property>
+                <property name="activate-on-single-click">false</property>
+              </object>
+            </child>
           </object>
         </child>
       </object>
@@ -47,3 +73,4 @@
     </section>
   </menu>
 </interface>
+
