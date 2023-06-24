@@ -1,9 +1,34 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <component type="desktop">
-	<id>io.github.aerocyber.task.desktop</id>
-	<metadata_license>CC0-1.0</metadata_license>
-	<project_license>GPL-3.0-or-later</project_license>
-	<description>
-	  <p>Manage task </p>
-	</description>
+  <!--Created with jdAppStreamEdit 7.0-->
+  <id>io.github.aerocyber.task.desktop</id>
+  <name>Task</name>
+  <summary>Manage tasks efficiently</summary>
+  <developer_name>Aero</developer_name>
+  <launchable type="desktop-id">io.github.aerocyber.task.desktop</launchable>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-3.0-or-later</project_license>
+  <description>
+    <p>Manage task effectively. Task is a todo list management software that aims to make managing todos easier. Task comes with a minimal UI using the powerful and beautiful GTK framework.</p>
+  </description>
+  <url type="homepage">https://github.com/aerocyber/Task</url>
+  <url type="bugtracker">https://github.com/aerocyber/Task/issues</url>
+  <url type="help">https://github.com/aerocyber/Task/issues</url>
+  <url type="donation">https://buymeacoffee.com/aerocyber</url>
+  <url type="vcs-browser">https://github.com/aerocyber/Task</url>
+  <url type="contribute">https://github.com/aerocyber/Task</url>
+  <categories>
+    <category>Utility</category>
+    <category>GTK</category>
+  </categories>
+  <content_rating type="oars-1.1"/>
+  <keywords>
+    <keyword>Tasks</keyword>
+    <keyword>Task</keyword>
+    <keyword>Todo</keyword>
+    <keyword>task management</keyword>
+    <keyword>To Do</keyword>
+    <keyword>list</keyword>
+    <keyword>todo list</keyword>
+  </keywords>
 </component>

@@ -1,8 +1,8 @@
 [Desktop Entry]
-Name=task
-Exec=task
-Icon=io.github.aerocyber.task
-Terminal=false
 Type=Application
-Categories=GTK;
+Name=Task
+GenericName=Task
+Icon=io.github.aerocyber.task
+Exec=task
+Categories=GTK;Utility;
 StartupNotify=true
