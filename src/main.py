@@ -23,7 +23,7 @@ import gi
 gi.require_version('Gtk', '4.0')
 gi.require_version('Adw', '1')
 
-from gi.repository import Gtk, Gio, Adw
+from gi.repository import Gtk, Gio, Adw, GLib
 from .window import TaskWindow
 
 
@@ -43,6 +43,7 @@ class TaskApplication(Adw.Application):
         We raise the application's main window, creating it if
         necessary.
         """
+        GLib.set_application_name("Task")
         win = self.props.active_window
         if not win:
             win = TaskWindow(application=self)
@@ -51,12 +52,14 @@ class TaskApplication(Adw.Application):
     def on_about_action(self, widget, _):
         """Callback for the app.about action."""
         about = Adw.AboutWindow(transient_for=self.props.active_window,
-                                application_name='task',
+                                application_name='Task',
                                 application_icon='io.github.aerocyber.task',
                                 developer_name='Aero',
-                                version='0.1.0',
+                                version='dev',
+                                license_type=Gtk.License.GPL_3_0,
                                 developers=['Aero'],
-                                copyright='© 2023 Aero')
+                                copyright='© 2023 Aero',
+                                comments="Manage tasks efficiently.",)
         about.present()
 
     def on_preferences_action(self, widget, _):
